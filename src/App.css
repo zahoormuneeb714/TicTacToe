@@ -1,0 +1,55 @@
+.container {
+  background-color: black;
+  width: 600px;
+}
+
+.btn {
+  background-color: transparent;
+  font-family: poppins;
+  padding: 10px 15px;
+  background-color: var(--tttTheme);
+  border: 2px solid var(--tttTheme);
+  color: inherit;
+  cursor: pointer;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid var(--tttTheme);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.btn:disabled,
+.btn:hover:disabled {
+  background-color: var(--tttThemeLight);
+  border: 2px solid var(--tttThemeLight);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.btn-link {
+  color: white;
+  background: transparent;
+  font-family: poppins;
+  font-size: 16px;
+  border: none;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.btn-link:hover {
+  color: var(--tttTheme);
+  text-decoration: underline;
+}
+
+@media (max-width: 769px) {
+  .form-container {
+    width: 90vw;
+    margin: 1rem;
+  }
+  .btn {
+    font-size: 14px;
+  }
+}
